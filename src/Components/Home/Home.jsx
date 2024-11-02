@@ -1,28 +1,39 @@
-import user from '../../assets/user.png';
+import Banner from '../Banner/Banner';
 import Categories from '../Categories/Categories';
+import Jobbs from '../Jobbs/Jobbs';
 const Home = () => {
+    // const data = useLoaderData()
+    // console.log(data);
+    // const [carrers, setCarrers] = useState([])
+    // const [show, setShow] = useState(4)
+    // useEffect(() => {
+    //     // fetch('jobs.json')
+    //     //     .then(res => res.json())
+    //     //     .then(data => setCarrers(data))
+    //     setCarrers(data)
+    // }, [])
+
+    // console.log(carrers);
+    // const handleAllShow = () => {
+    //     setShow(carrers.length)
+    // }
     return (
-        <div className='md:w-10/12 mx-auto w-full'>
-            <div className="hero bg-base-200 ">
-                <div className="hero-content flex-col lg:flex-row-reverse justify-between">
-                    <img
-                        src={user}
-                        className="max-w-sm rounded-lg shadow-2xl md:w-1/2 w-full" />
-                    <div className="md:w-1/2 w-full">
-                        <h1 className="text-5xl font-bold">One Step Closer To Your
-                            <br />
-                            <span className='text-4xl font-bold bg-gradient-to-r from-[#9873FF] to-[#9873FF] text-transparent bg-clip-text'>Dream Job</span>
-                        </h1>
-                        <p className="py-6">
-                            Explore thousands of job opportunities with all the information you need. Its your future.
-                            Come find it. Manage all your job application from start to finish.
-                        </p>
-                        <button className="btn bg-gradient-to-r text-xl text-white from-[#9873FF] to-[#9873FF]">Get Started</button>
-                    </div>
+        <div>
+            <div className='md:w-10/12 mx-auto w-full'>
+                <Banner></Banner>
+                <div>
+                    <Categories></Categories>
                 </div>
-            </div>
-            <div>
-                <Categories></Categories>
+                <Jobbs></Jobbs>
+                {/* <div className='grid md:grid-cols-2 gap-4'>
+                    {
+                        show === 4 ? carrers.slice(0, show).map(career => <Jobs carrer={career} handleAllShow={handleAllShow}></Jobs>) :
+                            carrers.map(career => <Jobs carrer={career} handleAllShow={handleAllShow}></Jobs>)
+                    }
+                </div> */}
+                {/* <div className='flex items-center justify-center my-5'>
+                    <button onClick={() => handleAllShow()} className='btn bg-gradient-to-r text-xl text-white from-[#9873FF] to-[#9873FF]'>See All Jobs</button>
+                </div> */}
             </div>
         </div>
     );

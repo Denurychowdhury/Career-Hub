@@ -9,7 +9,7 @@ const Categories = () => {
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
-    console.log(categories);
+    // console.log(categories);
     return (
         <div className="md:my-10 my-4 md:w-10/12 mx-auto w-full">
             <div className="text-center my-4">

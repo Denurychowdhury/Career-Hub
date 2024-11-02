@@ -1,9 +1,9 @@
-
+import TItleBanner from "../TItleBanner/TItleBanner";
 
 const Blogs = () => {
     return (
         <div>
-            <h3>Blog section</h3>
+            <TItleBanner title={'Blogs section'}></TItleBanner>
         </div>
     );
 };
